@@ -53,5 +53,5 @@ steps:
     command: publish
     publishDirectory: '$(Build.SourcesDirectory)/package1.txt'
     vstsFeedPublish: 'test'
-    vstsFeedPackagePublish: 'Package1'
+    vstsFeedPackagePublish: 'package1'
     packagePublishDescription: 'Simple file text'
