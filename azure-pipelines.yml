@@ -46,3 +46,12 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
+- task: UniversalPackages@0
+  displayName: Universal Publish
+  inputs:
+    command: publish
+    publishDirectory: '$(Build.SourcesDirectory)/package1.txt'
+    vstsFeedPublish: 'test'
+    vstsFeedPackagePublish: 'Package1'
+    packagePublishDescription: 'Simple file text'
