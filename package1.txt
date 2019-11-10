@@ -1,3 +1,5 @@
 This is a simple package file.
 
-v.1.0
+Update package.
+
+v.1.1
